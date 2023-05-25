@@ -1,0 +1,51 @@
+/* 아래에 코드를 작성해 주세요. */
+
+#container {
+  border: 3px solid #000;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 300px;
+  background-color: rgb(221, 215, 250);
+  border: 3px solid darkblue;
+  font-size: 50px;
+  text-align: center;
+}
+.i1 {
+  height: 100px;
+}
+.i2 {
+  height: 150px;
+}
+.i3 {
+  height: 80px;
+}
+.i4 {
+  height: 180px;
+}
+.i5 {
+  height: 200px;
+}
+.i1 {
+  align-self: flex-start;
+  height: 100px;
+  order: 10;
+}
+.i2 {
+  order: -1;
+}
+.i3 {
+  order: 4;
+}
+.i4 {
+  order: 2;
+}
+.i5 {
+  order: 1;
+}

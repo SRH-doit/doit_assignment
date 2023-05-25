@@ -1,0 +1,30 @@
+/* 아래에 코드를 작성해 주세요. */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: 600px;
+  margin: auto;
+  background-color: rgb(241, 227, 255);
+  padding: 10px;
+}
+
+.content h1 {
+  background-color: blueviolet;
+  color: #fff;
+  text-align: center;
+
+  text-decoration: underline;
+
+  line-height: 2;
+}
+
+.content p {
+  padding: 10px;
+  text-indent: 20px;
+
+  letter-spacing: -1px;
+}

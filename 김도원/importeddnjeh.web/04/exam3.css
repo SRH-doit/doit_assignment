@@ -1,0 +1,41 @@
+/* 아래에 코드를 작성해 주세요. */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul.list {
+  list-style-type: none;
+  border: 3px solid purple;
+}
+
+ul.list li:nth-child(2n) {
+  background-color: rgb(255, 184, 255);
+}
+
+ul.list li:nth-child(1),
+ul.list li:nth-child(3),
+ul.list li:nth-child(5) {
+  border: 2px solid #000;
+}
+
+ul.list li:last-child {
+  color: purple;
+  font-size: 20px;
+}
+
+ul.list li::first-letter {
+  font-size: 200%;
+}
+
+ul.list li:nth-child(10)::first-line {
+  color: red;
+}
+
+ul::before {
+  content: "hello elice";
+}
+ul::after {
+  content: "goodbye elice";
+}

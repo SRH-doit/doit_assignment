@@ -1,0 +1,57 @@
+/* 아래에 코드를 작성해 주세요. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+#wrap {
+  background-color: antiquewhite;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul.tab {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul.tab li {
+  width: calc(100% / 4);
+  text-align: center;
+}
+
+ul.tab li a {
+  background-color: rgb(213, 170, 113);
+  color: #fff;
+  display: block;
+}
+
+ul.tab li + li {
+  border-left: 1px solid antiquewhite;
+}
+
+ul.tab li a:hover {
+  background-color: rgb(113, 73, 20);
+}
+
+.content {
+  width: 600px;
+  height: 300px;
+  background-color: rgb(198, 198, 198);
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

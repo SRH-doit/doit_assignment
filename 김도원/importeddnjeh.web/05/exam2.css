@@ -1,0 +1,35 @@
+/* 아래에 코드를 작성해 주세요. */
+
+div {
+  border: 3px solid #000;
+  margin: 5px;
+}
+
+.px {
+  font-size: 20px;
+}
+
+.em {
+  font-size: 2em;
+}
+
+.rem {
+  font-size: 2rem;
+}
+
+.vw {
+  width: 50vw;
+  background-color: yellow;
+}
+
+.vh {
+  height: 30vh;
+}
+
+.fixed {
+  width: 800px;
+}
+
+.percent {
+  width: 50%;
+}

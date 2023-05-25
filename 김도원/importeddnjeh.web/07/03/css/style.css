@@ -1,0 +1,76 @@
+/* 아래에 코드를 작성해 주세요. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 800px;
+  height: 800px;
+  background-color: antiquewhite;
+  margin: 100px auto;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  position: absolute;
+}
+
+.b01 {
+  top: 0;
+  right: 0;
+  background-color: aqua;
+  z-index: 2;
+}
+
+.b02 {
+  bottom: 0;
+  right: 0;
+  background-color: rgb(17, 135, 50);
+}
+.b03 {
+  bottom: 0;
+  left: 0;
+  background-color: rgb(17, 43, 135);
+}
+.b04 {
+  right: -50px;
+  top: 50%;
+  background-color: rgb(98, 143, 242);
+}
+
+.b05 {
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  background-color: rgb(208, 242, 98);
+}
+
+.b06 {
+  top: 50px;
+  right: 50px;
+  background-color: rgb(159, 159, 33);
+  z-index: 1;
+}
+.b07 {
+  top: 100px;
+  right: 100px;
+  background-color: rgb(255, 255, 77);
+}
+
+body {
+  height: 5000px;
+}
+
+.box.fixed {
+  position: fixed;
+  top: calc(50% - 100px);
+  right: 50%;
+  margin-right: -600px;
+  background-color: rgb(83, 255, 77);
+  z-index: 2;
+}

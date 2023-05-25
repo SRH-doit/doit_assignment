@@ -1,0 +1,49 @@
+/* 아래에 코드를 작성해 주세요. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#box {
+  width: 900px;
+  background-color: antiquewhite;
+  margin: auto;
+  padding: 10px;
+}
+
+#box h1::after {
+  content: "desktop";
+}
+
+.box_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box_wrap > div {
+  height: 200px;
+  color: #fff;
+  font-size: 50px;
+}
+
+.box_wrap > div.box1 {
+  width: 600px;
+  background-color: blueviolet;
+}
+.box_wrap > div.box2 {
+  width: calc(100% - 610px);
+  background-color: rgb(63, 220, 89);
+}
+.box_wrap > div.box3 {
+  width: calc(100% - 610px);
+  background-color: rgb(220, 63, 202);
+  margin-top: 10px;
+}
+.box_wrap > div.box4 {
+  width: 600px;
+  margin-top: 10px;
+  background-color: rgb(43, 195, 226);
+}

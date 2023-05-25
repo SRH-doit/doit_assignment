@@ -1,0 +1,53 @@
+/* 아래에 코드를 작성해 주세요. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+  background-color: rgb(53, 53, 53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.menu {
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+}
+
+ul.menu li a {
+  display: block;
+  text-align: center;
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.339);
+  transition: all 0.3s ease-in-out;
+}
+
+ul.menu li a img {
+  width: 200px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+}
+
+ul.menu li a:hover img {
+  transform: scale(1.2);
+}
+
+ul.menu li a:hover {
+  color: rgb(225, 211, 255);
+}
+
+.img_wrap {
+  min-height: 250px;
+}
