@@ -1,0 +1,40 @@
+/* 아래에 코드를 작성해 주세요. */
+
+@media screen and (max-width: 899px) {
+  #box {
+    width: 100%;
+  }
+
+  #box h1::after {
+    content: "tablet";
+  }
+
+  .box_wrap > div.box1 {
+    width: 100%;
+  }
+
+  .box_wrap > div.box2 {
+    width: calc(50% - 5px);
+    margin-top: 10px;
+  }
+
+  .box_wrap > div.box3 {
+    width: calc(50% - 5px);
+  }
+
+  .box_wrap > div.box4 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #box h1::after {
+    content: "mobile";
+  }
+  .box_wrap > div.box2 {
+    width: 100%;
+  }
+  .box_wrap > div.box3 {
+    display: none;
+  }
+}

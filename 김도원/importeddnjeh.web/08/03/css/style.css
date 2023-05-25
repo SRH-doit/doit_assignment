@@ -1,0 +1,59 @@
+/* 아래에 코드를 작성해 주세요. */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  border: 1px solid rebeccapurple;
+  border-radius: 50%;
+  animation: circle 5s infinite alternate ease-in-out;
+  animation-play-state: paused;
+}
+
+.circle:hover {
+  animation-play-state: running;
+}
+
+.circle::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: rebeccapurple;
+  display: block;
+  left: calc(50% - 10px);
+  position: absolute;
+  top: -10px;
+  border-radius: 50%;
+  animation: bg 5s infinite alternate ease-in-out;
+  animation-play-state: paused;
+}
+.circle:hover::after {
+  animation-play-state: running;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bg {
+  0% {
+    background-color: rebeccapurple;
+    transform: scale(1);
+  }
+  100% {
+    background-color: rgb(46, 224, 255);
+    transform: scale(0.1);
+  }
+}

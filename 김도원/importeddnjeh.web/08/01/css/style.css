@@ -1,0 +1,38 @@
+/* 아래에 코드를 작성해 주세요. */
+
+.box {
+  border: 3px solid #ccc;
+  width: 100px;
+  height: 100px;
+}
+
+.b01 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: yellow;
+  transition: all 1s;
+}
+
+.b01:hover {
+  background-color: red;
+  transform: translate(-50%, -50%) scale(1.5) rotate(45deg);
+  color: #fff;
+  font-size: 20px;
+}
+
+.b02 {
+  background-color: red;
+  transform: translate(200px, 150px) rotate(45deg);
+}
+
+.b03 {
+  background-color: greenyellow;
+  transform: skew(-30deg);
+  transition: all 0.5s cubic-bezier(0.74, 0.05, 0.19, 1.12);
+}
+
+.b03:hover {
+  transform: skew(0deg);
+}
