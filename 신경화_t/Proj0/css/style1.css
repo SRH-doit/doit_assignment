@@ -1,0 +1,18 @@
+/* 아래에 코드를 작성해 주세요. */
+
+#wrap {
+    border: 5px solid rgb(219, 205, 235);
+    height: 600px;
+    width: 600px;
+    background-color: rgba(164, 150, 254, 0.575);
+    background-image: url(../img/img1.png);
+    background-repeat: no-repeat;
+    background-size: 200px auto;
+    background-position: 450px 300px;
+    background-attachment: fixed;
+  }
+  
+  body {
+    height: 4000px;
+  }
+  
