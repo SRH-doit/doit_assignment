@@ -1,0 +1,32 @@
+/* 아래에 코드를 작성해 주세요. */
+#container{
+    border: 3px solid #000;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.item{
+    width: 100px;
+    background-color: rgb(221,215,250);
+    border: 3px solid darkblue;
+    font-size: 50px;
+    text-align: center;
+}
+.i1 {
+    height: 100px;
+}
+.i2 {
+    height: 150px;
+}
+.i3 {
+    height: 80px;
+}
+.i4 {
+    height: 180px;
+}
+.i5 {
+    height: 200px;
+}
