@@ -1,0 +1,43 @@
+
+
+/* 아래에 코드를 작성해 주세요. */
+
+* {
+    margin: 10;
+    padding: 10;
+  }
+  
+  #menu_section > ul {
+      width: 200px;
+      list-style-type: none;
+      margin: auto;
+      text-align: center;
+      border: 3px solid #ccc;
+  }
+  
+  #menu_section >ul li {
+      background-color: rgb(161, 71, 161);
+      margin: 5px;
+  }
+  
+  #menu_section >ul li a {
+      text-decoration: none;
+      color: #fff;
+  }
+  
+  #menu_section > ul li:hover {
+      background-color: #000;
+  }
+  
+  #menu_section > ul li:hover a {
+      color: yellow;
+  }
+  
+  #menu_section >ul li:active {
+      background-color: rgb(209, 0, 181);
+  }
+
+
+  h3 {
+    background-color:orange;
+}
