@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BoardDAO">
+	<insert id="insertBoard" parameterType="myboard">
+		INSERT INTO myboard (seq, title, writer, content)
+		VALUES((select nvl(max(seq), 0)+1 from myboard), #{title}, #{writer}, #{content})
+	</insert>
+	<update id="updateBoard" parameterType="myboard">
+		UPDATE myboard SET title=#{title}, content=#{content} WHERE seq = #{seq}
+	</update>
+	<delete id="deleteBoard" parameterType="myboard">
+		DELETE FROM myboard WHERE seq = #{seq}
+	</delete>
+	<select id="getBoard" resultType="myboard" parameterType="myboard">
+		SELECT * FROM myboard WHERE seq=#{seq}
+	</select>
+	<select id="getBoardList" resultType="myboard" parameterType="myboard">
+		SELECT * FROM myboard
+		WHERE title LIKE '%'||#{searchKeyword}||'%' ORDER BY seq DESC
+	</select>
+</mapper>
