@@ -1,0 +1,57 @@
+/* 아래에 코드를 작성해 주세요. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #wrap에 margin과 padding을 넣고, border를 넣어 영역을 구분합니다. */
+#wrap {
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #000;
+}
+
+/* ul에 문단정렬 속성을 넣고, 아이콘을 숨김 처리합니다.
+ul에 들어간 문단정렬 속성에 자식 요소인 li는 영향을 받습니다. */
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+/* li에 inline-block 속성을 넣으면 가운데 정렬되며 block tag의 속성을 가지게 됩니다. */
+ul li{
+    display: inline-block;
+}
+
+/* a tag에는 block tag 속성을 가지게 하고, 너비와 높이를 설정한 후 버튼의 형태를 가지도록 여러가지 속성을 넣어봅니다.
+특히 line-height를 이용하면, 한 줄의 높이값을 이용해 상하정렬을 할 수 있습니다. */
+ul li a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    line-height: 100px;
+    color: rgb(185, 185, 185);
+    border-radius: 0 20px;
+    background-color:red;
+}
+
+ul li:nth-child(1) a {
+    background-color: rgb(54, 102, 145);
+}
+ul li:nth-child(2) a {
+    background-color: rgb(54, 145, 100);
+}
+ul li:nth-child(3) a {
+    background-color: rgb(134, 54, 145);
+}
+ul li:nth-child(4) a {
+    background-color: rgb(145, 54, 92);
+}
+ul li:nth-child(5) a {
+    background-color: rgb(145, 113, 54);
+}
+
+ul li a:hover {
+    background-color: #000;
+    color: #fff;
+}

@@ -1,0 +1,21 @@
+*{
+    margin: 20px;;
+    padding:10px;
+}
+
+section#box {
+    background-color: #699728;
+}
+
+section a {
+    text-decoration: none;
+}
+
+section > a.btn {
+    color: red;
+    font-size: 40px;
+}
+
+h1 + p {
+    border: 4px solid purple;
+}

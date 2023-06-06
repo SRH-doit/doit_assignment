@@ -1,0 +1,54 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: rgba(71, 163, 128, 0.339);
+    align-items: center;
+}
+
+/* .img_wrap{
+    width:250px;
+    height:250px;
+} */
+/* 목록들이 나란히 배치될 수 있도록 menu에 flex 설정을 진행합니다. */
+ul.menu {
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+}
+
+ul.menu li a {
+    display: block;
+    text-align: center;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 0.339);
+    transition: all 0.3s ease-in-out;
+}
+
+ul.menu li a img {
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+}
+ul.menu li a:hover img {
+    transform: scale(1.2);
+}
+
+ul.menu li a:hover {
+    color: rgb(225, 211, 255);
+}
+
+.img_wrap {
+    min-height: 250px;
+}
