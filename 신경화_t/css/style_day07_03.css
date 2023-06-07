@@ -1,0 +1,84 @@
+/* 아래에 코드를 작성해 주세요. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body에 고정높이를 주어 스크롤을 생성합니다. */
+body {
+    height: 5000px;
+}
+
+/* 부모가 될 상자의 정렬 및 너비와 높이를 정의합니다.
+높이값을 갖고 있어야 자식 요소들의 위치를 지정할 수 있습니다. */
+
+#container {
+    width: 800px;
+    height: 800px;
+    background-color: antiquewhite;
+    margin: 100px auto;
+    position: relative;
+}
+/* 공통적인 class box에 너비와 높이 테두리를 줍니다.
+position 속성을 적용해 보세요.
+요소가 모두 겹쳐지는 것을 확인할 수 있습니다. */
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.b01 {
+    top: 0;
+    right: 0;
+    background-color: aqua;
+    z-index: 2;
+}
+
+.b02 {
+    bottom: 0;
+    right: 0;
+    background-color: rgb(17, 135, 50);
+}
+.b03 {
+    bottom: 0;
+    left: 0;
+    background-color: rgb(17, 43, 135);
+}
+.b04 {
+    right: -50px;
+    top: 50%;
+    background-color: rgb(98, 143, 242);
+}
+
+.b05 {
+    /* left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px; */
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    background-color: rgb(208, 242, 98);
+}
+
+.b06 {
+    top: 50px;
+    right: 50px;
+    background-color: rgb(159, 159, 33);
+    z-index: 1;
+}
+.b07 {
+    top: 100px;
+    right: 100px;
+    background-color: rgb(255, 255, 77);
+}
+/* 브라우저에 고정 */
+.box.fixed {
+    position: fixed;
+    top: calc(50% - 100px);
+    right: 50%;
+    margin-right: -600px;
+    background-color: rgb(83, 255, 77);
+    z-index: 2;
+}

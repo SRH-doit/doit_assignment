@@ -1,0 +1,13 @@
+/* 먼저 모든 태그를 초기화합니다.
+ul, a의 값도 기본값으로 변경합니다. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}

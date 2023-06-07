@@ -1,0 +1,18 @@
+/* 아래에 코드를 작성해 주세요. */
+/* 아래에 코드를 작성해 주세요. */
+#wrap {
+    border: 3px solid #000;
+    height: 600px;
+    width: 600px;
+    background-color: rgba(164, 150, 254, 0.575);
+    background-image: url(../img/rabbit1.png), url(../img/bg_line.gif);
+    background-repeat: no-repeat, repeat-x;
+    background-size: 200px auto, auto;
+    background-position: 450px 300px, bottom;
+    /* background-position: 300px top, bottom; */
+    background-attachment: fixed, scroll;
+}
+
+body {
+    height: 4000px;
+}

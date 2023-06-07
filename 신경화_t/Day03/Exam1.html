@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS 선택자</title>
+    <style>
+        h2 {
+            color: red;
+        }
+
+        .coding {
+            color: blue;
+        }
+
+        /* 지시사항 1번을 따라 CSS 선택자를 적용해 Style을 부여해 주세요. */
+        #coding {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Type Hello World</h2>
+    <h2 class="coding">Class Hello World</h2>
+    <h2 id="coding">Id Hello World</h2>
+    <p>
+        아이디는 클래스보다 상대적으로 더 큰 공간을 의미합니다.
+    <br>
+    <h3 id="coding">예를 들면 ID는 거실, 클래스는 거실 속 티비 공간입니다!</h3>
+    <br>
+    <h3 class="coding">
+        이는 아이디가 클래스보다 CSS 선택자 우선순위가 높다는 것을 의미합니다.
+        거실에 있는 티비를 파란색으로 칠한다고 거실이 파란색으로 되지는 않지만,
+        거실을 전부를 노란색으로 도배하면 거실에 있는 티비도 노란색으로 칠해집니다.
+    </h3>
+
+
+</body>
+
+</html>

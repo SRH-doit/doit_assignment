@@ -1,0 +1,55 @@
+/* 아래에 코드를 작성해 주세요. */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  section#msg{
+    background-color: #dc78ad;
+  }
+
+  section#msg ul {
+    width: 500px;
+    list-style-type: none;
+
+  }
+  section#msg ul li {
+    background-color:#ccc;
+   
+  }
+
+
+
+  ul {
+    width: 200px;
+    list-style-type: none;
+    margin: auto;
+    text-align: center;
+  
+    border: 4px solid #ccc;
+  }
+  
+  ul li {
+    background-color: rgb(51, 146, 27);
+    margin: 5px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    font-size: 40px;
+    color: #fff;
+  }
+  
+  ul li:hover {
+    background-color: rgb(33, 19, 87);
+  }
+  
+  ul li:hover a {
+    color: yellow;
+  }
+  
+  ul li:active {
+    background-color: rgb(209, 0, 181);
+  }
+  

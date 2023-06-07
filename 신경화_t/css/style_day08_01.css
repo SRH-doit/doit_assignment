@@ -1,0 +1,55 @@
+/* 아래에 코드를 작성해 주세요. */
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .box {
+    border: 2px solid #ddd;
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* position 속성과 transform 속성을 활용하여 요소의 가운데에 배치합니다.
+  calc나 margin을 사용하는 것보다 계산식이 들어가지 않기에 좀 더 편리합니다.
+  transition 속성을 넣어 부드럽게 변경되도록 합니다. */
+  .b01 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: yellow;
+    transition: all 1s;
+  }
+  
+  .b01:hover {
+    background-color: red;
+    /* transform: scale(1.5) rotate(45deg); */
+    transform: translate(-50%, -50%) scale(1.5) rotate(-45deg);
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .b02 {
+    background-color: rgb(60, 28, 164);
+    transform: translate(200px, 150px) rotate(45deg);
+    transition: all 1s;
+  }
+  
+  .b02:hover{
+    background-color: rgb(4, 157, 60);
+    transform: translate(300px, 50px) scale(2) rotate(180deg);
+  }
+
+
+  .b03 {
+    background-color: greenyellow;
+    transform: skew(-30deg);
+    transition: all 0.5s cubic-bezier(0.74, 0.05, 0.19, 1.12);
+  }
+  
+  .b03:hover {
+    transform: skew(0deg);
+  }
+  

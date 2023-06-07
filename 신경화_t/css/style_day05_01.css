@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  /* .content의 너비값을 고정값을 준 후 블록요소를 가운데 배치되도록 margin:auto 속성을 주고, 배경색을 입력합니다.
+  
+  안쪽 여백인 padding을 주어 공간의 여유를 줍니다. */
+  
+  .content {
+    width: 600px;
+    margin: auto;
+    background-color: rgb(241, 227, 255);
+    padding: 10px;
+  }
+  
+  /* 제목 요소에 배경색과 글씨색을 변경합니다. */
+  /* 문단 정렬 속성을 사용해봅니다.
+  (left / center / right / justify)
+  밑줄 속성을 이용해 글씨를 꾸며 봅니다.
+  (underline / over-line / line-through) */
+  
+  .content h1 {
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+    text-decoration: line-through;
+    /* 한줄의 간격을 조절해 봅니다.
+  비율로도 넣을 수 있으며, 고정된 값을 넣을 수도 있습니다.
+  상하 가운데 정렬로 넣어야 할 때 사용할 수 있습니다. */
+    line-height: 2;
+  }
+  .content p {
+    padding: 10px;
+    text-indent: 20px;
+    letter-spacing: 10px;
+  }
+  

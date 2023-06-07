@@ -1,0 +1,48 @@
+
+
+.item {
+    width: 100px;
+    background-color: rgb(221, 215, 250);
+    border: 3px solid rgb(95, 0, 139);
+    font-size: 50px;
+    text-align: center;
+}
+
+.i1 {
+    height: 100px;
+    order: 10;
+/* 요소 중 하나에만 메인 축 또는 교차 축의 정렬을 달리해봅니다. */
+    align-self: flex-start;
+}
+.i2 {
+    height: 150px;
+    order: -10;
+}
+.i3 {
+    height: 80px;
+    order: 4;
+}
+.i4 {
+    height: 180px;
+    order: 2;
+}
+.i5 {
+    height: 200px;
+    order: 1;
+}
+
+#container {
+    border: 3px solid #000;
+    height: 600px;
+    display: flex;
+    /* 메인 축의 정렬도 적용해 봅니다.
+    center, space-evenly, space-around, flex-end등을 적용해 봅니다. */
+    justify-content: space-between;
+    /* 교차 축의 정렬도 적용해 봅니다.    center, flex-end등을 적용해 봅니다. */
+    align-items: center;
+    /* flex의 방향을 변경해 봅니다.
+이때 메인축의 변경이 있기 때문에 교차축도 동시에 변경됩니다. */
+    /* flex-direction:column;  */
+
+     flex-wrap: no-wrap;
+}
