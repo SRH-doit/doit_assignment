@@ -1,0 +1,46 @@
+/* 아래에 코드를 작성해 주세요. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #box {
+    width: 900px;
+    background-color: aqua;
+    margin: auto;
+    padding: 10px;
+  }
+  /* h1에 ::after 속성을 이용해 text를 출력합니다. */
+  #box h1::after {
+    content: 'desktop';
+  }
+  /* flex를 이용해 layout 작업을 진행합니다.
+  item 요소의 너비값이 부족할 경우, 상하로 배치될 수 있도록 wrap 속성을 정의합니다. */
+  .box_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .box1 {
+    width: 600px;
+    background-color: blueviolet;
+  }
+  
+  .box2 {
+    width: calc(100% - 610px);
+    background-color: rgb(63, 220, 89);
+  }
+  .box_wrap > div.box3 {
+    width: calc(100% - 610px);
+    background-color: rgb(220, 63, 202);
+    margin-top: 10px;
+  }
+  .box_wrap > div.box4 {
+    width: 600px;
+    margin-top: 10px;
+    background-color: rgb(43, 195, 226);
+  }
+  
