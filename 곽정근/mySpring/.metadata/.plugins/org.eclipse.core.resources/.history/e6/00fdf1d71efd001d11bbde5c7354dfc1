@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/login.do">login</prop>
+				<prop key="/getBoardList.do">getBoardList</prop>
+				<prop key="/getBoard.do">getBoard</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="login" class="tommy.spring.web.user.LoginController"></bean>
+	<bean id="getBoardList" class="tommy.spring.web.board.GetBoardListController"></bean>
+	<bean id="getBoard" class="tommy.spring.web.board.GetBoardController"></bean>
+</beans>

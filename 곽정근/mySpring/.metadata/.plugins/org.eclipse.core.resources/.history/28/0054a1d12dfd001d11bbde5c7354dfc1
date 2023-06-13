@@ -1,0 +1,23 @@
+package tommy.spring.web.board;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import tommy.spring.web.board.impl.BoardDAO;
+
+@Controller
+public class DeleteBoardController {
+
+	@RequestMapping("/deleteBoard.do")
+	public String deleteBoard(BoardVO vo, BoardDAO boardDAO) {
+		System.out.println("글 삭제 처리");
+		// 1. 사용자 입력 정보 추출
+		
+		// 2. 데이터베이스 연동 처리
+		boardDAO.deleteBoard(vo);
+		
+		// 3. 화면 네비게이션
+		return "getBoardList.do";
+	}
+
+}

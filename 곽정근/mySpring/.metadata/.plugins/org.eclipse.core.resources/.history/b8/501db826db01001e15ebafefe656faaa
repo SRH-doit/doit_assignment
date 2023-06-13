@@ -1,0 +1,5 @@
+package tommy.spring.web.board;
+
+public class BoardVO {
+
+}

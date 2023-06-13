@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BoardDAO">
+	<resultMap type="myboard" id="boardResult">
+		<id property="seq" column="SEQ" />
+		<result property="title" column="TITLE"/>
+		<result property="writer" column="WRITER"/>
+		<result property="content" column="CONTENT"/>
+		<result property="regDate" column="REGDATE"/>
+		<result property="cnt" column="CNT"/>
+	</resultMap>
+	<insert id="insertBoard" parameterType="myboard">
+		INSERT INTO myboard (seq, title, writer, content)
+		VALUES((select nvl(max(seq), 0)+1 from myboard), #{title}, #{writer}, #{content})
+	</insert>
+	<update id="updateBoard" parameterType="myboard">
+		UPDATE myboard SET title=#{title}, content=#{content} WHERE seq = #{seq}
+	</update>
+	<delete id="deleteBoard" parameterType="myboard">
+		DELETE FROM myboard WHERE seq = #{seq}
+	</delete>
+	<select id="getBoard" resultType="myboard" parameterType="myboard">
+		SELECT * FROM myboard WHERE seq=#{seq}
+	</select>
+	<select id="getBoardList" resultMap="boardResult" parameterType="myboard">
+		SELECT * FROM myboard
+		WHERE 1=1
+		<if test="searchCondition=='TITLE'">
+			AND title LIKE '%'||#{searchKeyword}||'%'
+		</if>
+		<if test="searchCondition=='CONTENT'">
+			AND content LIKE '%'||#{searchKeyword}||'%'
+		</if>
+		ORDER BY seq DESC
+	</select>
+</mapper>

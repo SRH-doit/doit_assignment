@@ -1,0 +1,27 @@
+package tommy.spring.web.user;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import tommy.spring.web.user.impl.UserDAO;
+
+@Controller
+public class LoginController {
+
+	@RequestMapping("/login.do")
+	public String login(UserVO vo, UserDAO userDAO) {
+		System.out.println("로그인 처리");
+		// 1. 사용자 입력 정보 추출
+		
+		// 2. 데이터베이스 연동 처리
+		UserVO user = userDAO.getUser(vo);
+		
+		// 3. 화면 네비게이션
+		if (user != null) {
+			return "getBoardList.do";
+		} else {
+			return "login.jsp";
+		}
+	}
+
+}

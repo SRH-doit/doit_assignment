@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;myWeb/src/main/java/tommy.spring.exam03&apos;&#x0D;&#x0A;- Original project: &apos;myWeb&apos;&#x0D;&#x0A;- Destination element: &apos;myWeb/src/main/java/tommy.spring.exam03&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     tommy.spring.exam02.MyBeanOne.java&#x0D;&#x0A;     tommy.spring.exam02.MyBean.java&#x0D;&#x0A;     tommy.spring.exam02.MyBeanTwo.java" description="Copy compilation units" destination="/src\/main\/java&lt;tommy.spring.exam03" element1="/src\/main\/java&lt;tommy.spring.exam02{MyBeanOne.java" element2="/src\/main\/java&lt;tommy.spring.exam02{MyBean.java" element3="/src\/main\/java&lt;tommy.spring.exam02{MyBeanTwo.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1683439854343" units="3" version="1.0"/>
+</session>

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin-left: 10px;
+	color: tomato;
+	text-align: left;
+	font-size: 2em;
+}
+
+h3 {
+	margin-left: 10px;
+	color: limegreen;
+	text-align: left;
+	font-size: 1.5em;
+}
+
+hr {
+	border: 0;
+	height: 5px;
+	background: skyblue;
+	margin: 5px;
+}
+
+textarea {
+	padding: 10px;
+	width: 350px;
+	height: 100px;
+	resize: none;
+	border: 0;
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	outline: none;
+}
+
+.box {
+	margin-right: 10px;
+	padding: .8em .5em;
+	font-family: inherit;
+	border: 1px solid #999;
+	border-radius: 5px;
+}
+
+input[type="text"], input[type="password"] {
+	width: 200px;
+	height: 35px;
+	font-size: 15px;
+	border: 0;
+	border-radius: 15px;
+	outline: none;
+	padding-left: 10px;
+	background-color: rgb(255, 255, 255);
+}
+
+input[type="submit"], input[type="reset"], input[type="button"] {
+	width: 150px;
+	height: 40px;
+	margin-left: 20px;
+	border: 0;
+	outline: none;
+	border-radius: 40px;
+	background: linear-gradient(to left, rgb(255, 77, 46), rgb(255, 155, 47));
+	color: white;
+	font-size: 1em;
+	letter-spacing: 2px;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 1px;
+	text-align: center;
+	line-height: 1.5;
+	margin: 20px 10px;
+}
+
+table th {
+	width: 155px;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	color: #fff;
+	background: #ce4869;
+}
+
+table td {
+	width: 155px;
+	padding: 10px;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+	background: #eee;
+}

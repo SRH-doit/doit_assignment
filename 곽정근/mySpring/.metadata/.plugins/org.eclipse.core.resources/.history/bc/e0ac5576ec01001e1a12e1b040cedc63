@@ -1,0 +1,5 @@
+package tommy.spring.board;
+
+public class BoardServiceClient {
+
+}
