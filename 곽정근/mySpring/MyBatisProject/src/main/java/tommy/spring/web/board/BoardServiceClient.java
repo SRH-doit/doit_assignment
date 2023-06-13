@@ -9,7 +9,7 @@ public class BoardServiceClient {
 		BoardDAO boardDAO = new BoardDAO();
 		BoardVO vo = new BoardVO();
 		vo.setTitle("myBatis 테스트");
-		vo.setWriter("삼장법사");
+		vo.setWriter("곽정근");
 		vo.setContent("myBatis 내용");
 		boardDAO.insertBoard(vo);
 		vo.setSearchCondition("TITLE");
